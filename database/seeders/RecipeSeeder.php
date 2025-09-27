@@ -17,7 +17,7 @@ class RecipeSeeder extends Seeder
     {
         $this->command->info('Generating Recipes with ingredients and steps');
 
-        $ingredients = Ingredient::factory()->count(100)->create();
+        $ingredients = Ingredient::factory()->count(20)->create();
 
         Recipe::factory()
             ->count(1000)
